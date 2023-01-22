@@ -33,7 +33,7 @@ def parse_pdv(pdv, stations, oil_types):
     
     #Explore children, by type of children
     for element in pdv:
-        if element.tag == "adress":
+        if element.tag == "adresse":
             station["adress"] = element.text
         if element.tag == "ville":
             station["city"] = element.text
